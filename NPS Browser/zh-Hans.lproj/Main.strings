@@ -8,8 +8,8 @@
 /* Class = "NSButton"; ibShadowedToolTip = "移除已完成与已暂停项目"; ObjectID = "0u4-nU-RL9"; */
 "0u4-nU-RL9.ibShadowedToolTip" = "移除已完成与已暂停项目";
 
-/* Class = "NSMenuItem"; title = "NPS Browser"; ObjectID = "1Xt-HY-uBw"; */
-"1Xt-HY-uBw.title" = "NPS Browser";
+/* Class = "NSMenuItem"; title = "NPS Browser Silicon"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "NPS Browser Silicon";
 
 /* Class = "NSMenu"; title = "查找"; ObjectID = "1b7-l0-nxx"; */
 "1b7-l0-nxx.title" = "查找";
@@ -56,8 +56,8 @@
 /* Class = "NSMenuItem"; title = "PS3 图标"; ObjectID = "4q1-1b-TZ6"; */
 "4q1-1b-TZ6.title" = "PS3 图标";
 
-/* Class = "NSMenuItem"; title = "退出NPS Browser"; ObjectID = "4sb-4s-VLi"; */
-"4sb-4s-VLi.title" = "退出NPS Browser";
+/* Class = "NSMenuItem"; title = "退出NPS Browser Silicon"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "退出NPS Browser Silicon";
 
 /* Class = "NSTextFieldCell"; placeholderString = "url在这里填写"; ObjectID = "5HB-gO-ket"; */
 "5HB-gO-ket.placeholderString" = "url在这里填写";
@@ -65,8 +65,8 @@
 /* Class = "NSMenuItem"; title = "编辑"; ObjectID = "5QF-Oa-p0T"; */
 "5QF-Oa-p0T.title" = "编辑";
 
-/* Class = "NSMenuItem"; title = "关于NPS Browser"; ObjectID = "5kV-Vb-QxS"; */
-"5kV-Vb-QxS.title" = "关于NPS Browser";
+/* Class = "NSMenuItem"; title = "关于NPS Browser Silicon"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "关于NPS Browser Silicon";
 
 /* Class = "NSMenuItem"; title = "PSV 游戏"; ObjectID = "6SS-c2-qNo"; */
 "6SS-c2-qNo.title" = "PSV 游戏";
@@ -221,8 +221,8 @@
 /* Class = "NSTextFieldCell"; placeholderString = "3"; ObjectID = "OhS-B2-rNK"; */
 "OhS-B2-rNK.placeholderString" = "3";
 
-/* Class = "NSMenuItem"; title = "隐藏NPS Browser"; ObjectID = "Olw-nP-bQN"; */
-"Olw-nP-bQN.title" = "隐藏NPS Browser";
+/* Class = "NSMenuItem"; title = "隐藏NPS Browser Silicon"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "隐藏NPS Browser Silicon";
 
 /* Class = "NSMenuItem"; title = "查找上一个"; ObjectID = "OwM-mh-QMV"; */
 "OwM-mh-QMV.title" = "查找上一个";
@@ -440,8 +440,8 @@
 /* Class = "NSTextFieldCell"; placeholderString = "%%%"; ObjectID = "gEU-8X-bNu"; */
 "gEU-8X-bNu.placeholderString" = "%%%";
 
-/* Class = "NSWindow"; title = "NPS Browser"; ObjectID = "gEz-wV-LLD"; */
-"gEz-wV-LLD.title" = "NPS Browser";
+/* Class = "NSWindow"; title = "NPS Browser Silicon"; ObjectID = "gEz-wV-LLD"; */
+"gEz-wV-LLD.title" = "NPS Browser Silicon";
 
 /* Class = "NSMenuItem"; title = "粘贴"; ObjectID = "gVA-U4-sdL"; */
 "gVA-U4-sdL.title" = "粘贴";
@@ -545,8 +545,8 @@
 /* Class = "NSMenuItem"; title = "数据检测"; ObjectID = "tRr-pd-1PS"; */
 "tRr-pd-1PS.title" = "数据检测";
 
-/* Class = "NSMenu"; title = "NPS Browser"; ObjectID = "uQy-DD-JDr"; */
-"uQy-DD-JDr.title" = "NPS Browser";
+/* Class = "NSMenu"; title = "NPS Browser Silicon"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "NPS Browser Silicon";
 
 /* Class = "NSMenuItem"; title = "剪切"; ObjectID = "uRl-iY-unG"; */
 "uRl-iY-unG.title" = "剪切";

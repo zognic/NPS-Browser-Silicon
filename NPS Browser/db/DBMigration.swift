@@ -31,7 +31,20 @@ final class DBMigration {
         )
         
         // Tell Realm to use this new configuration object for the default Realm
-        return try! Realm(configuration: config)
+        do {
+            return try Realm(configuration: config)
+        } catch let error as Realm.Error where error.code == .unsupportedFileFormatVersion {
+            // Files written by Realm 3.x can't be upgraded anymore: set the old file aside and start over
+            let fileURL = config.fileURL!
+            let asideURL = fileURL.deletingPathExtension()
+                .appendingPathExtension("unsupported-\(Int(Date().timeIntervalSince1970)).realm")
+            // NSLog because this runs before SwiftyBeaver gets its destinations
+            NSLog("%@, moving it to %@", error.localizedDescription, asideURL.path)
+            try! FileManager.default.moveItem(at: fileURL, to: asideURL)
+            return try! Realm(configuration: config)
+        } catch {
+            fatalError("\(error)")
+        }
     }
     
     

@@ -6,6 +6,7 @@
 //  Copyright © 2018 JK3Y. All rights reserved.
 //
 
+import CommonCrypto
 import Promises
 import Alamofire
 import SwiftyUserDefaults
@@ -176,42 +177,18 @@ class NetworkManager {
     }
 
     func getUpdateXMLURLFromHMAC(titleId: String) -> String {
-        var output: [String] = []
-        var error: [String] = []
+        // HMAC-SHA256 key from devnoname120/vitanpupdatelinks
+        let key: [UInt8] = [
+            0xE5, 0xE2, 0x78, 0xAA, 0x1E, 0xE3, 0x40, 0x82, 0xA0, 0x88, 0x27, 0x9C, 0x83, 0xF9, 0xBB, 0xC8,
+            0x06, 0x82, 0x1C, 0x52, 0xF2, 0xAB, 0x5D, 0x2B, 0x4A, 0xBD, 0x99, 0x54, 0x50, 0x35, 0x51, 0x14,
+        ]
+        let data: [UInt8] = Array("np_\(titleId)".utf8)
+        var mac = [UInt8](repeating: 0, count: Int(CC_SHA256_DIGEST_LENGTH))
+        CCHmac(CCHmacAlgorithm(kCCHmacAlgSHA256), key, key.count, data, data.count, &mac)
+        let hash = mac.map { String(format: "%02x", $0) }.joined()
 
-        let vitaupdatelinksPath = Bundle.main.path(forResource: "vitaupdatelinks", ofType: nil)
-        let task = Process()
-        let outpipe = Pipe()
-        task.standardOutput = outpipe
-        let errpipe = Pipe()
-        task.standardError = errpipe
-
-        task.launchPath = vitaupdatelinksPath
-        task.arguments = [titleId]
-
-        task.launch()
-
-        let outdata = outpipe.fileHandleForReading.readDataToEndOfFile()
-        if var string = String(data: outdata, encoding: .utf8) {
-            string = string.trimmingCharacters(in: .newlines)
-            output = string.components(separatedBy: "\n")
-        }
-
-        let errdata = errpipe.fileHandleForReading.readDataToEndOfFile()
-        if var string = String(data: errdata, encoding: .utf8) {
-            string = string.trimmingCharacters(in: .newlines)
-            error = string.components(separatedBy: "\n")
-        }
-
-        task.waitUntilExit()
-        let status = task.terminationStatus
-
-        if (status == 0) {
-            debugPrint("Update URL Fetch SUCCESS!")
-            return output.first!
-        } else {
-            return error.first!
-        }
+        // gs-sec's certificate isn't publicly trusted, so this must stay http
+        return "http://gs-sec.ww.np.dl.playstation.net/pl/np/\(titleId)/\(hash)/\(titleId)-ver.xml"
     }
 
     func fetchUpdateXML(url: String) -> (() -> (Promise<URL>)) {

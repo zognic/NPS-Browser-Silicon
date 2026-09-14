@@ -1,0 +1,5 @@
+// Build settings forced on every Carthage dependency.
+// Usage: XCODE_XCCONFIG_FILE="$PWD/Carthage.xcconfig" carthage bootstrap --platform macOS --no-use-binaries --cache-builds
+ARCHS = arm64
+EXCLUDED_ARCHS = x86_64
+MACOSX_DEPLOYMENT_TARGET = 11.0

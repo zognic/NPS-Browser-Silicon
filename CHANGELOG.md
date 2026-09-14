@@ -1,4 +1,19 @@
 # Changelog
+## v2.0.0 (NPS Browser Silicon)
+First release of NPS Browser Silicon, based on NPS Browser 1.4.6 by JK3Y.
+
+### Changed
+- Renamed to NPS Browser Silicon. The bundle identifier is unchanged, so preferences and data are shared with NPS Browser.
+- Native Apple Silicon (arm64) only app. Requires macOS 11 or later.
+- Realm upgraded from 3.21 to 20.0.5. Databases written by NPS Browser 1.x must be converted once with `tools/realm-upgrade/convert.sh`.
+- pkg2zip rebuilt for arm64 from the lusid1 fork.
+- Game update URLs are computed in Swift, the `vitaupdatelinks` binary was removed.
+- License: CC0 1.0 (the original NPS Browser is under the Unlicense).
+
+### Fixed
+- The app no longer crashes on a database it can't open: the file is set aside and a new database is created.
+- Dependencies build with Xcode 26 (`carthage-bootstrap.sh`).
+
 ## v1.4.5
 ### Fixed
 - Merged an update to fix localization files (@L1cardo)

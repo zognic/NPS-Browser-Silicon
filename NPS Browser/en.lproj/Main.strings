@@ -8,8 +8,8 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Remove completed and stopped downloads"; ObjectID = "0u4-nU-RL9"; */
 "0u4-nU-RL9.ibShadowedToolTip" = "Remove completed and stopped downloads";
 
-/* Class = "NSMenuItem"; title = "NPS Browser"; ObjectID = "1Xt-HY-uBw"; */
-"1Xt-HY-uBw.title" = "NPS Browser";
+/* Class = "NSMenuItem"; title = "NPS Browser Silicon"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "NPS Browser Silicon";
 
 /* Class = "NSMenu"; title = "Find"; ObjectID = "1b7-l0-nxx"; */
 "1b7-l0-nxx.title" = "Find";
@@ -56,8 +56,8 @@
 /* Class = "NSMenuItem"; title = "PS3 Avatars"; ObjectID = "4q1-1b-TZ6"; */
 "4q1-1b-TZ6.title" = "PS3 Avatars";
 
-/* Class = "NSMenuItem"; title = "Quit NPS Browser"; ObjectID = "4sb-4s-VLi"; */
-"4sb-4s-VLi.title" = "Quit NPS Browser";
+/* Class = "NSMenuItem"; title = "Quit NPS Browser Silicon"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Quit NPS Browser Silicon";
 
 /* Class = "NSTextFieldCell"; placeholderString = "url goes here"; ObjectID = "5HB-gO-ket"; */
 "5HB-gO-ket.placeholderString" = "url goes here";
@@ -65,8 +65,8 @@
 /* Class = "NSMenuItem"; title = "Edit"; ObjectID = "5QF-Oa-p0T"; */
 "5QF-Oa-p0T.title" = "Edit";
 
-/* Class = "NSMenuItem"; title = "About NPS Browser"; ObjectID = "5kV-Vb-QxS"; */
-"5kV-Vb-QxS.title" = "About NPS Browser";
+/* Class = "NSMenuItem"; title = "About NPS Browser Silicon"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "About NPS Browser Silicon";
 
 /* Class = "NSMenuItem"; title = "PSV Games"; ObjectID = "6SS-c2-qNo"; */
 "6SS-c2-qNo.title" = "PSV Games";
@@ -221,8 +221,8 @@
 /* Class = "NSTextFieldCell"; placeholderString = "3"; ObjectID = "OhS-B2-rNK"; */
 "OhS-B2-rNK.placeholderString" = "3";
 
-/* Class = "NSMenuItem"; title = "Hide NPS Browser"; ObjectID = "Olw-nP-bQN"; */
-"Olw-nP-bQN.title" = "Hide NPS Browser";
+/* Class = "NSMenuItem"; title = "Hide NPS Browser Silicon"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "Hide NPS Browser Silicon";
 
 /* Class = "NSMenuItem"; title = "Find Previous"; ObjectID = "OwM-mh-QMV"; */
 "OwM-mh-QMV.title" = "Find Previous";
@@ -440,8 +440,8 @@
 /* Class = "NSTextFieldCell"; placeholderString = "%%%"; ObjectID = "gEU-8X-bNu"; */
 "gEU-8X-bNu.placeholderString" = "%%%";
 
-/* Class = "NSWindow"; title = "NPS Browser"; ObjectID = "gEz-wV-LLD"; */
-"gEz-wV-LLD.title" = "NPS Browser";
+/* Class = "NSWindow"; title = "NPS Browser Silicon"; ObjectID = "gEz-wV-LLD"; */
+"gEz-wV-LLD.title" = "NPS Browser Silicon";
 
 /* Class = "NSMenuItem"; title = "Paste"; ObjectID = "gVA-U4-sdL"; */
 "gVA-U4-sdL.title" = "Paste";
@@ -545,8 +545,8 @@
 /* Class = "NSMenuItem"; title = "Data Detectors"; ObjectID = "tRr-pd-1PS"; */
 "tRr-pd-1PS.title" = "Data Detectors";
 
-/* Class = "NSMenu"; title = "NPS Browser"; ObjectID = "uQy-DD-JDr"; */
-"uQy-DD-JDr.title" = "NPS Browser";
+/* Class = "NSMenu"; title = "NPS Browser Silicon"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "NPS Browser Silicon";
 
 /* Class = "NSMenuItem"; title = "Cut"; ObjectID = "uRl-iY-unG"; */
 "uRl-iY-unG.title" = "Cut";
