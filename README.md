@@ -27,14 +27,14 @@ The original app only runs on Intel, so Apple Silicon Macs need Rosetta to run i
    ```
    tools/realm-upgrade/convert.sh
    ```
-   The script downloads Realm 10.48.1, the last version that can read the old format, makes a copy of the database next to it, then converts it in place and prints what it contains. You can skip this step if you have no bookmarks: the game list can be downloaded again.
+   The script is in this repository and in the release zip. It needs the Xcode Command Line Tools (`xcode-select --install`), downloads Realm 10.48.1, the last version that can read the old format, makes a copy of the database next to it, then converts it in place and prints what it contains. You can skip this step if you have no bookmarks: the game list can be downloaded again.
 5. Move `NPS Browser.app` to the Trash and install `NPS Browser Silicon.app` in /Applications. Don't keep both: once the database is converted, the original app can't open it anymore.
 6. Launch NPS Browser Silicon. Your preferences and download folder are kept. If you skipped step 4, the old database is renamed `default.unsupported-<timestamp>.realm` and a new one is created: download the game list again with Database > Reload (⌘R).
 
 Good to know:
 * If you launched NPS Browser Silicon before converting, you can still convert the set-aside file: `tools/realm-upgrade/convert.sh <path to default.unsupported-….realm>`, then quit the app and rename it back to `default.realm`.
 * To go back to the original app, restore the `default.realm` you backed up in step 3.
-* Builds downloaded from the internet aren't notarized, so macOS may refuse to open them. Right-click the app and choose Open, or run `xattr -dr com.apple.quarantine "/Applications/NPS Browser Silicon.app"`.
+* Release builds are signed ad hoc and not notarized, so macOS blocks them the first time. Try to open the app once, then go to System Settings > Privacy & Security and click Open Anyway, or run `xattr -dr com.apple.quarantine "/Applications/NPS Browser Silicon.app"`.
 * Realm keeps copies of the database from before each format upgrade (`default.v9.backup.realm`, `default.v23.backup.realm`) for 3 months. Once everything works, you can delete them to free space.
 
 ## Features
